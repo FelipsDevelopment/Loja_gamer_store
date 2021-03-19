@@ -18,21 +18,21 @@
         <div class="container">
             <div class="navbar">
                 <div class="logo">
-                    <img src="./images/gamerstore-logo.png" width="125px">
+                    <img src="./images/gamerstore-logo.png" width="125px"/>
                 </div>
                 <nav>
-                    <ul>
+                    <ul class="ul" id="ItensMenu">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Produtos</a></li>
                         <li><a href="#">Sobre</a></li>
                         <li><a href="#">Sua Conta</a></li>
                     </ul>
                 </nav>
-                <img src="./images/cart.png" width="30px" height="30px">
+                <img src="./images/menu.png" class="icone-menu" onclick="menutoggle()">
             </div>
             <div class="row">
                 <div class="col-2">
-                    <h1 class="h1">Compre a melhor máquina do<br> mercado!</h1>
+                    <h1 >Compre a melhor máquina do<br> mercado!</h1>
                     <p class="p-inicial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Nam non eros ut ipsum 
                         viverra rhoncus. Morbi pellentesque adio vel elit </p>
                         <a href="#" class="btn-inicial">Veja mais &#10147;</a>
@@ -242,7 +242,7 @@
                 <div class="col-2">
                     <p>Exclusivo loja Gamer Store!</p>
                     <h2 class="h1-ofertas">Asus ROG Phone 3</h2>
-                    <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Nam non eros ut ipsum 
+                    <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nam non eros ut ipsum 
                         viverra rhoncus. Morbi pellentesque adio vel 
                     </small>
                     <a href="" class="btn">Compre Já! &#10147;</a>
@@ -340,9 +340,6 @@
                         <img src="./images/appstore-logo.png" >
                     </div>
                 </div>
-                <div class="footer-col-2">
-                
-                </div>
                 <div class="footer-col-3">
                     <h3>Links úteis</h3>
                     <ul>
@@ -366,5 +363,22 @@
             <p class="copyright">Copyright 2021 - Felipe Gomes</p>
         </div>
     </div>
+
+<!---------------------- JavaScript para o menu ---------------------->
+
+    <script>
+        var ItensMenu = document.getElementById("ItensMenu");
+        ItensMenu.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if(ItensMenu.style.maxHeight == "0px" ){
+                ItensMenu.style.maxHeight = "200px";
+    
+            }else {
+                ItensMenu.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
 </body>
 </html>
